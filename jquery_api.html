@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>API操作</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.css"/>
+		<style>
+			.ifrswipt{width: 233px;height: 168px;,margin: 0 auto;position: relative;padding: 3px 20px 3px 20px;}
+			.ifrswipt .inner{width: 223px;height: 168px;overflow: visible;position: relative;}
+			.ifrswipt ul{width: 920px;list-style: none;overflow: hidden;position: absolute;top: 0px;left: 0;margin: 0;padding: 0;}
+			.ifrswipt li{width: 120px;height: 168px;display: inline;line-height: 168px;float: left;position: relative;;margin-right: 15px;}
+			.ifrswipt li .imgswipt{width: 120px;height: 160px;cursor: pointer;padding: 3px;border: 1px solid #eee;}
+			/*手机方向*/
+			.p-portrait{width: 75px;height: 150px;line-height: 150px;text-align: center;background-color: #eee;border: 2px solid #666;}
+			.p-landscape{width: 150px;height: 75px;line-height: 75px;text-align: center;background-color: #ccc; border: 2px solid #666;}
+		</style>
+	</head>
+	<body>
+		<div id="d2" data-role="page">
+			<header data-role="header">
+				<h1>API</h1>
+			</header>
+			<div class="content" data-role="content">
+				<h3>修改默认配置值</h3>
+				<p><a href="error.html">点击我</a></p>
+				<h3>修改默认配置值：gradeA</h3>
+				<p id="pTip"></p>
+				<h3>触摸滑动事件</h3>
+				<div class="ifrswipt">
+					<div class="inner">
+						<ul id="ifrswipt">
+							<li><img src="images/dd_family_1.jpg" alt="" class="imgswipt" /></li>
+							<li><img src="images/dd_family_4.jpg" alt="" class="imgswipt" /></li>
+							<li><img src="images/dd_scroll.jpg" alt="" class="imgswipt" /></li>
+							<li><img src="images/pro_01.jpg" alt=""  class="imgswipt"/></li>
+							<li><img src="images/pro_02.jpg" alt="" class="imgswipt" /></li>
+						</ul>
+					</div>
+				</div>
+				<h3>手机手持方向</h3>
+				<p id="b"></p>
+				<h3>是否滚动</h3>
+				<p id="a"></p>
+				<a href="#d1">下一页</a>
+			</div>
+			<footer data-role="footer" class="ui-bar">
+				<h4>&copy; 温慧出品 &nbsp;wenhuiweb.cn</h4>
+			</footer>
+		</div>
+		<div id="d1" data-role="page">
+			<header data-role="header">
+				<h1>API</h1>
+			</header>
+			<div class="content" data-role="content">
+				<a href="#d2">上一页</a>
+			</div>
+			<footer data-role="footer" class="ui-bar">
+				<h4>&copy; 温慧出品 &nbsp;wenhuiweb.cn</h4>
+			</footer>
+		</div>
+		
+		<script type="text/javascript" src="js/jquery1.9.1.min.js"></script>
+		<script src="js/jqery_api.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.mobile-1.4.5.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.cookie.js" type="text/javascript"></script>	
+	</body>
+</html>
